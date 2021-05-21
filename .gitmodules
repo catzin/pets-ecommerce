@@ -1,0 +1,3 @@
+[submodule "server-ecommerce"]
+	path = server-ecommerce
+	url = https://github.com/catzin/server-ecommerce
