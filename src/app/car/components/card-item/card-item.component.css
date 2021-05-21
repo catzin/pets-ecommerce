@@ -1,0 +1,28 @@
+.card{
+    border: none;
+    outline: none;
+    background-color:#fff;
+    border-radius: 25px;
+    
+
+}
+
+.text{
+    font-size: 13px;
+    color:#000;
+}
+
+.info{
+    line-height: 17px;
+}
+
+.precio span{
+    color: #fb3531;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.color-b{
+    background-color:#dc3545;
+}

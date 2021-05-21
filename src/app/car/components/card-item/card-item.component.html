@@ -1,0 +1,25 @@
+ <div class="card mt-1">
+
+             <div class="product align-items-center p-2 text-center">
+               <img [src] ="'http://localhost:4000/'+item.img" alt="" class="rounded" width="160">
+               <h5 class="mt-3">{{item.marca}}</h5>
+               <!---card-info-->
+               <div class="mt-3 info">
+                 <span class="text-primary d-block">tamaño: {{item.tamanio}} kg</span>
+                 <span class="text-primary d-block">categoria: {{item.categoria}}</span>
+                 <span class="text-success d-block">cantidad: {{item.cantidad}}</span>
+               </div>
+               <div class="precio mt-3 text-dark">
+                 <span>${{item.total}}</span>
+               </div>
+
+
+               <!---end info-->
+             </div>
+
+             <!---buttons-->
+             <div class="d-grid ">
+               <button class="btn btn-danger" type="button" (click)="eliminar()">eliminar</button>
+             </div>
+             
+</div>

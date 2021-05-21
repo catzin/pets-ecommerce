@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+.bg{
+    background-image: url('../../../assets/log.jpeg');
+    background-position: center center;
+    width: 50%;
+    height: 50%;
+}
+
+
+*{
+    font-family: 'Bree Serif', serif;
+}

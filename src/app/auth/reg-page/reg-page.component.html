@@ -1,0 +1,72 @@
+
+<body>
+   <div class="container w-80 mt-5 rounded shadow">
+       <div class="row align-items-stretch">
+           <div class="col d-none d-lg-block d-md-block col-md-5 col-lg-5 col-xl-6 rounded">
+               <img src="../../../assets/log.jpeg" alt="" srcset="" style="height: 100%; width: 100%; background-position: left;" >
+               
+
+           </div>
+           <div class="col bg-white p-5 rounded-end">
+               <h2 class="fw-bold text-center pt-5 mb-5">Registrate</h2>
+               <!-----login-->
+               <form [formGroup]="Reg" (ngSubmit)="registrar()">
+                   <div class="row">
+                       <div class="col-md-4 mb-2">
+                        <label for="email" class="form-label">nombre</label>
+                       <input type="text" formControlName="nombre" class="form-control" placeholder="nombre">
+
+                       </div>
+
+                       <div class="col-md-4 mb-2">
+
+                            <label for="email" class="form-label">ap paterno</label>
+                            <input type="text"  formControlName="appaterno" class="form-control" placeholder="nombre">
+
+                       </div>
+                       <div class="col-md-4 mb-2">
+
+                           <label for="email" class="form-label">ap materno</label>
+                            <input type="text" formControlName="apmaterno" class="form-control" placeholder="nombre">
+
+                       </div>
+
+                   </div>
+                   <div class="mb-4">
+                       <label for="email" class="form-label">Correo electronico</label>
+                       <input type="email" formControlName="email" class="form-control" placeholder="email@gmail.com">
+                   </div>
+                   <div class="mb-4">
+                       <label for="password" class="form-label">contraseña</label>
+                       <input type="password" formControlName="password" class="form-control" placeholder="contrasena">
+                   </div>
+
+                    <div class="mb-4">
+                       <label for="password" class="form-label">confirmar</label>
+                       <input type="password" class="form-control" placeholder="contrasena">
+                   </div>
+
+
+                   <div class="d-grid">
+                       <button type="submit" [disabled]="Reg.invalid" class="btn btn-primary">Registrarme</button>
+                   </div>
+
+                   <div class="my-3">
+                       <span>¿Ya tienes una cuenta? <a routerLink="/auth">ingresa</a></span><br>
+                     
+                   </div>
+                  
+               </form>
+
+               <!----end login-->
+               <!----redes-->
+             
+
+
+           </div>
+
+       </div>
+   </div>
+
+
+   </body>

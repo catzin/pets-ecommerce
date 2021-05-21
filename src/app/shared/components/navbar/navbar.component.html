@@ -1,0 +1,39 @@
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="#">La bodeguita214</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"><i class="fas fa-paw"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav m-auto my-2 my-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" routerLink="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/nosotros" >Nosotros</a>
+        </li>
+       
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Mascotas
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" style="font-family: 'Bree Serif', serif; cursor: pointer;" [routerLink]="['/productos/marcas/mascota/','perro']">Perro</a></li>
+            <li><a class="dropdown-item" style="font-family: 'Bree Serif', serif; cursor: pointer;" [routerLink]="['/productos/marcas/mascota/','gato']">Gato</a></li>
+         
+          </ul>
+        </li>
+
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/cart"><i class="fas fa-cart-plus" style="font-size: 20px;"></i></a>
+        </li>
+      </ul>
+      <div class="d-flex">
+        <a class="nav-link" routerLink="/auth/" style="cursor: pointer;">iniciar sesion</a>
+
+      </div>
+    </div>
+  </div>
+</nav>

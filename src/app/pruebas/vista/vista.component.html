@@ -1,0 +1,53 @@
+<p>vista works!</p>
+
+
+<div class="container mt-5 mx-auto shadow-sm rounded">
+
+    <div class="row">
+        <div class="col-md-6">
+            imagen
+        </div>
+
+        <div class="col">
+            <div class="row">
+                <form [formGroup]="miForm">
+
+                <div class="col-md-6 text-center">
+                    <div class="form-group">
+                        <select class="form-select"  class="form-select" formControlName="cantidad"  aria-label="Default select example">
+                            <option value="">selecione cantidad</option>
+                            <option [value] ="i"  *ngFor="let i of data">{{i}}</option>
+                        </select>
+
+                        <div class="form-group">
+                            <div class="d-block mt-2 mr-2">
+                           
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="d-block">
+                    <button class="btn btn-primary">agregar</button>
+                </div>
+
+                    <div class="info">
+                        <h3>{{miForm.valid}}</h3>
+                        <h3>{{miForm.value|json}}</h3>
+                    </div>
+
+
+                </form>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+
+    
+    
+</div>

@@ -1,0 +1,74 @@
+
+<div class="container mb-5 mt-5">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="carrito-tab" data-bs-toggle="tab" data-bs-target="#carrito" type="button" role="tab" aria-controls="carrito" aria-selected="true">Carrito</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Perfil</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">mis ordenes</button>
+  </li>
+</ul>
+
+
+<div class="tab-content" id="myTabContent">
+
+  <div  class="tab-pane fade show active" id="carrito" role="tabpanel" aria-labelledby="carrito-tab">
+
+      <!---inicion container cards-->
+     <div class="containerr mb-5">
+
+       <div class="alert alert-danger col-12 col-md-4 col-lg-4" *ngIf="!band">
+         Aún no agregaste productos :c
+       </div>
+       
+       <div class="container mt-4 mb-5">
+         <div *ngIf="total > 0">
+           <div class="row justify-content-start">
+             <div class="col-auto">
+               <div class="alert alert-warning">
+                 ${{total}}
+               </div>
+             </div>
+             <div class="col-auto my-auto">
+               <button class="btn btn-success btn-small" (click)="comprar()">comprar</button>
+              </div>
+           </div>
+         <div>
+     
+       </div>
+       
+       <div class="row">
+         <!--cards-->
+         <div class="col-12 col-md-4 col-lg-3" *ngFor="let i of data">
+          <app-card-item [item]="i"  (onDeleteItem)="eliminarItem($event)"></app-card-item>
+         </div>
+
+       </div>    
+     </div>
+
+     <!---fin container-->
+
+  </div>
+
+     </div>
+  </div>
+
+
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+
+      <div class="container mt-5">
+
+        <app-data></app-data>
+        
+
+      </div>
+  </div>
+  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+</div>
+</div>
+
+
