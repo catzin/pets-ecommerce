@@ -1,4 +1,5 @@
-# Tienda
+# Ecommerce 📦
+_En este proyecto se desarrolla una web para la venta de alimentos para mascota esta acompañado de un servidor , el cual nos permite registrar nuevos clientes y mantener una sesion activa para realizar acciones dentro de la web_
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.4.
 
@@ -6,23 +7,25 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-# pets-ecommerce
+
+## comenzando 🚀
+_Arrancar la aplicacion_
+```
+iniciar servidor( backend ) : nodemon index.js
+```
+```
+iniciar app angular : ng serve -o
+```
+
+
+![Screenshot](./screens/1.png)
+![Screenshot](./screens/2.png)
+![Screenshot](./screens/3.png)
+![Screenshot](./screens/4.png)
+
+_Para mas detalles de funcionamiento revise el backend -_  
+[backend](https://github.com/catzin/server-ecommerce/tree/318ddb9e902875481f69ee59290d8c4ac4d3d62e)
+
+## Autor
+* **Ehecatzin Vallejo** 
