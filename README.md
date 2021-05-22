@@ -18,11 +18,10 @@ iniciar servidor( backend ) : nodemon index.js
 iniciar app angular : ng serve -o
 ```
 
-
-![Screenshot](./screens/1.png)
-![Screenshot](./screens/2.png)
-![Screenshot](./screens/3.png)
-![Screenshot](./screens/4.png)
+![image](./screens/1.png)
+![image](./screens/2.png)
+![image](./screens/3.png)
+![image](./screens/4.png)
 
 _Para mas detalles de funcionamiento revise el backend -_  
 [backend](https://github.com/catzin/server-ecommerce/tree/318ddb9e902875481f69ee59290d8c4ac4d3d62e)
